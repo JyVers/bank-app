@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+$dark: #1F3229;
+$gray: #A6ACA9;
+$green: #20A72E;
+
+*{padding: 0; margin: 0; font-family: 'Rubik'; font-weight: normal; font-size: 1rem; font-style: normal; text-decoration: none; color: $dark;}
+
+body{
+    margin: 15% 10%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+
+    border-radius: 5px;
+    border: 1px solid $dark;
+
+    width: 100%;
+    padding: 15px 0;
+    p{
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    .btn-icon{
+        height: 15px;
+        margin-right: 10px;
+    }
+}
+
+.section-title{
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: $gray;
+    font-weight: 300;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    h2{
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+.first-section{
+    .solde{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+        
+        p{
+            color: $gray;
+            font-size: 0,75rem;
+        }
+        h1{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+    
+    .accounts{
+        margin-top: 20%;
+        .account{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10%;
+            .account-name{
+                font-size: 0.75rem;
+            }
+            .account-balance{
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+        }
+        
+    }
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+
+    margin: 15% 0;
+    
+    span{
+        display: block;
+        height: 0.1px;
+        width: 80%;
+        background-color: $gray;
+    }
+}
+
+.second-section{
+    .transactions{
+        margin-top: 3%;
+        .transaction{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 7.5%;
+            .transaction-info{
+                .transaction-name{
+                    font-size: 0.75rem;
+                }
+                .transaction-date{
+                    font-size: 0.625rem;
+                    color: $gray;
+                    font-weight: 300;
+                }
+            }
+            .transaction-amount{
+                font-size: 0.75rem;
+                text-align: right;
+                font-weight: 600;
+                &.positive{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 15px;
+    left: 5vw;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    width: 90vw;
+    background-color: #fff;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+}
